@@ -39,6 +39,7 @@ public class ProductService {
         return "product deleted ";
     }
 
+
     public Product updateProduct(Product product){
         Product existingProduct = repository.findById(product.getId()).orElse(null);
         existingProduct.setName(product.getName());
